@@ -13,14 +13,20 @@
 
 <!--Adicione configuração do banco de dados abaixo-->
 <script>
+
+import { initializeApp } from "firebase/app";
+
 const firebaseConfig = {
   apiKey: "AIzaSyDlblHDtBM3bj-dFB0kxKxFillzFJroIh0",
   authDomain: "apanhador-de-frutas-9fe35.firebaseapp.com",
+  databaseURL: "https://apanhador-de-frutas-9fe35-default-rtdb.firebaseio.com",
   projectId: "apanhador-de-frutas-9fe35",
   storageBucket: "apanhador-de-frutas-9fe35.appspot.com",
   messagingSenderId: "312286044012",
   appId: "1:312286044012:web:7a3e03808cc4a1c1905d49"
 };
+
+ const app = initializeApp(firebaseConfig);
 </script>
 
 
